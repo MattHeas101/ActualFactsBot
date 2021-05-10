@@ -66,4 +66,10 @@ client.on('message', message => {
     } 
 })
 
+client.on('message', message => {
+    if (message.content === 'matt') {
+        message.channel.send('WHERE IS WHIPPY AND HARRY?!?!?')
+    } 
+})
+
 client.login(process.env.DJS_TOKEN)
