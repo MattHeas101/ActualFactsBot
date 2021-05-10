@@ -73,7 +73,7 @@ client.on('message', message => {
 })
 
 client.on('message', message => {
-    if (message.content === 'hi hoe hi ho') {
+    if (message.content === 'hi hoe hi hoe') {
         message.channel.send('Its off to work we go')
     } 
 })
