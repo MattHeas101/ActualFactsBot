@@ -73,6 +73,12 @@ client.on('message', message => {
 })
 
 client.on('message', message => {
+    if (message.content === 'hi hoe hi ho') {
+        message.channel.send('Its off to work we go')
+    } 
+})
+
+client.on('message', message => {
     if (message.content === 'KACHOW') {
         number = 1;
         imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
