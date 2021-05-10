@@ -71,5 +71,12 @@ client.on('message', message => {
         message.channel.send('WHERE IS WHIPPY AND HARRY?!?!?')
     } 
 })
+client.on('message', message => {
+    if (message.content === 'KACHOW') {
+        number = 1;
+        imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
+        message.channel.send ( {files: ["./images/kachow" + imageNumber + ".png"]})
+    } 
+})
 
 client.login(process.env.DJS_TOKEN)
