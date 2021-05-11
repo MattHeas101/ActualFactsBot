@@ -88,7 +88,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'palacepix') {
-        number = 20;
+        number = 30;
         imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
         message.channel.send ( {files: ["./images/palace" + imageNumber + ".png"]})
     } 
@@ -96,7 +96,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'Whippy') {
-        number = 4;
+        number = 15;
         imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
         message.channel.send ( {files: ["./images/whippy" + imageNumber + ".png"]})
     } 
