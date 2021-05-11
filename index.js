@@ -38,7 +38,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'who is a hoe?') {
-        message.channel.send('Well SweetHoneyTea_ is of course! Who else Silly Sauasage')
+        message.channel.send('Well SweetHoneyTea_ is of course! Who else Silly Sausage')
     } 
 })
 
