@@ -102,4 +102,20 @@ client.on('message', message => {
     } 
 })
 
+client.on('message', message => {
+    if (message.content === '!freddie') {
+        number = 15;
+        imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
+        message.channel.send ( {files: ["./images/freddie" + imageNumber + ".png"]})
+    } 
+})
+
+client.on('message', message => {
+    if (message.content === '!Freddie') {
+        number = 15;
+        imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
+        message.channel.send ( {files: ["./images/freddie" + imageNumber + ".png"]})
+    } 
+})
+
 client.login(process.env.DJS_TOKEN)
