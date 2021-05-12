@@ -88,7 +88,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'palacepix') {
-        number = 40;
+        number = 49;
         imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
         message.channel.send ( {files: ["./images/palace" + imageNumber + ".png"]})
     } 
@@ -115,6 +115,14 @@ client.on('message', message => {
         number = 15;
         imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
         message.channel.send ( {files: ["./images/freddie" + imageNumber + ".png"]})
+    } 
+})
+
+client.on('message', message => {
+    if (message.content === '!hoe') {
+        number = 15;
+        imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
+        message.channel.send ( {files: ["./images/hoe" + imageNumber + ".png"]})
     } 
 })
 
