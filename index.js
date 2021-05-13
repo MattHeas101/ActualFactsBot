@@ -184,8 +184,8 @@ client.on('message', message => {
 
 client.on('message', message => {
 	if (message.author.bot) return
-	if (!message.content.startsWith(config.prefix)) return
-	const args = message.content.slice(config.prefix.length).trim().split(/ +/g)
+	if (!message.content.startsWith('!')) return
+	const args = message.content.slice('!').trim().split(/ +/g)
 	const command = args.shift()
 
 	if (command === 'play') distube.play(message, args.join(' '))
