@@ -168,13 +168,13 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '!katie') {
-        message.channel.send('Im in my own world where everyone eats rainbows and poops butterflies')
+        message.channel.send('In my own world where everyone eats rainbows...... and poops butterflies')
     } 
 })
 
 client.on('message', message => {
     if (message.content === '!Katie') {
-        message.channel.send('Im in my own world where everyone eats rainbows and poops butterflies')
+        message.channel.send('In my own world where everyone eats rainbows...... and poops butterflies')
     } 
 })
 
