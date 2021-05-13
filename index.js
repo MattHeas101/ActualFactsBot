@@ -1,6 +1,7 @@
 const Discord = require('discord.js')
 const client = new Discord.Client()
-//const config = require('./config.json')
+//const  = require('./.json')
+const prefix = require('./prefix.json')
 const DisTube = require('distube')
 
 const distube = new DisTube(client, {searchSongs: false, emitNewSongOnly: true})
@@ -222,24 +223,24 @@ client.on('message', message => {
 })
 
 client.on('message', (message) => {
-    if (!message.content.startsWith(config.prefix)) return;
-    const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+    if (!message.content.startsWith(prefix.prefix)) return;
+    const args = message.content.slice(prefix.prefix.length).trim().split(/ +/g);
     const command = args.shift();
     if (command == "volume")
         distube.setVolume(message, args[0]);
 });
 
 client.on('message', (message) => {
-    if (!message.content.startsWith(config.prefix)) return;
-    const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+    if (!message.content.startsWith(prefix.prefix)) return;
+    const args = message.content.slice(prefix.prefix.length).trim().split(/ +/g);
     const command = args.shift();
     if (command == "shuffle")
         distube.shuffle(message);
 });
 
 client.on('message', (message) => {
-    if (!message.content.startsWith(config.prefix)) return;
-    const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+    if (!message.content.startsWith(prefix.prefix)) return;
+    const args = message.content.slice(prefix.prefix.length).trim().split(/ +/g);
     const command = args.shift();
     if (command == "autoplay") {
         let mode = distube.toggleAutoplay(message);
