@@ -126,4 +126,28 @@ client.on('message', message => {
     } 
 })
 
+client.on('message', message => {
+    if (message.content === '!Hoe') {
+        number = 15;
+        imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
+        message.channel.send ( {files: ["./images/hoe" + imageNumber + ".png"]})
+    } 
+})
+
+client.on('message', message => {
+    if (message.content === '!hunkules') {
+        number = 7;
+        imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
+        message.channel.send ( {files: ["./images/hunkules" + imageNumber + ".png"]})
+    } 
+})
+
+client.on('message', message => {
+    if (message.content === '!Hunkules') {
+        number = 7;
+        imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
+        message.channel.send ( {files: ["./images/hunkules" + imageNumber + ".png"]})
+    } 
+})
+
 client.login(process.env.DJS_TOKEN)
