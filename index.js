@@ -150,4 +150,32 @@ client.on('message', message => {
     } 
 })
 
+client.on('message', message => {
+    if (message.content === '!Katie') {
+        number = 8;
+        imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
+        message.channel.send ( {files: ["./images/katie" + imageNumber + ".png"]})
+    } 
+})
+
+client.on('message', message => {
+    if (message.content === '!katie') {
+        number = 8;
+        imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
+        message.channel.send ( {files: ["./images/katie" + imageNumber + ".png"]})
+    } 
+})
+
+client.on('message', message => {
+    if (message.content === '!katie') {
+        message.channel.send('Im in my own world where everyone eats rainbows and poops butterflies')
+    } 
+})
+
+client.on('message', message => {
+    if (message.content === '!Katie') {
+        message.channel.send('Im in my own world where everyone eats rainbows and poops butterflies')
+    } 
+})
+
 client.login(process.env.DJS_TOKEN)
