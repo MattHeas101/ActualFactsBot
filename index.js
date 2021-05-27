@@ -92,7 +92,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'palacepix') {
-        number = 49;
+        number = 52;
         imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
         message.channel.send ( {files: ["./images/palace" + imageNumber + ".png"]})
     } 
