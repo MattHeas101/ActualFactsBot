@@ -83,6 +83,26 @@ client.on('message', message => {
 })
 
 client.on('message', message => {
+    if (message.content === 'BUBS') {
+        message.channel.send('WHY DID YOU LIE?')
+    } 
+})
+
+client.on('message', message => {
+    if (message.content === 'WHY DID YOU LIE?') {
+        message.channel.send('LIEING IS BAD!')
+    } 
+})
+
+client.on('message', message => {
+    if (message.content === 'LIEING IS BAD!') {
+        message.channel.send('YOU NAUGHTY NAUGHTY BOY!')
+    } 
+})
+
+
+
+client.on('message', message => {
     if (message.content === 'KACHOW') {
         number = 1;
         imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
