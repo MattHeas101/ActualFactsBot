@@ -16,7 +16,6 @@ client.on('message', message => {
     if (message.content === '!help') {
         const embed = new Discord.MessageEmbed()
             .setTitle("Here is a list of my Commands!")
-            .setThumbnail(logo)
             .setColor('#0000FF')
             .addFields(
                 {
