@@ -290,6 +290,18 @@ client.on('message', message => {
     } 
 })
 
+client.on('ready', () => {
+    console.log('Bot ready!');
+
+    client.user.setPresence({
+        activity: {
+            name: 'DJDora',
+            type: 'Developed By'
+        }
+    });
+        },
+)
+
 
 
 client.login(process.env.DJS_TOKEN)
