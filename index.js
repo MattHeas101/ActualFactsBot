@@ -295,8 +295,8 @@ client.on('ready', () => {
 
     client.user.setPresence({
         activity: {
-            name: 'DJDora',
-            type: 'Developed By:'
+            name: 'Developed By DJDora',
+            type: 'PLAYING:'
         }
     });
         },
