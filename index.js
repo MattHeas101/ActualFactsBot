@@ -6,9 +6,6 @@ const DisTube = require('distube')
 
 const distube = new DisTube(client, {searchSongs: false, emitNewSongOnly: true})
 
-client.on('ready', () => {
-    console.log('Bot ready!')
-})
 
 
 
