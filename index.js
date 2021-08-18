@@ -245,7 +245,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '!hunkules') {
-        number = 7;
+        number = 8;
         imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
         message.channel.send ( {files: ["./images/hunkules" + imageNumber + ".png"]})
     } 
@@ -290,6 +290,22 @@ client.on('message', message => {
 client.on('message', message => {
     if (message.content === '!Pride') {
         number = 7;
+        imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
+        message.channel.send ( {files: ["./images/Pride" + imageNumber + ".png"]})
+    } 
+})
+
+client.on('message', message => {
+    if (message.content === '!Gonzo') {
+        number = 6;
+        imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
+        message.channel.send ( {files: ["./images/Pride" + imageNumber + ".png"]})
+    } 
+})
+
+client.on('message', message => {
+    if (message.content === '!gonzo') {
+        number = 6;
         imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
         message.channel.send ( {files: ["./images/Pride" + imageNumber + ".png"]})
     } 
