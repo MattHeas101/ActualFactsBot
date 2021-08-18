@@ -229,7 +229,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '!hoe') {
-        number = 15;
+        number = 18;
         imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
         message.channel.send ( {files: ["./images/hoe" + imageNumber + ".png"]})
     } 
@@ -237,7 +237,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '!Hoe') {
-        number = 15;
+        number = 18;
         imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
         message.channel.send ( {files: ["./images/hoe" + imageNumber + ".png"]})
     } 
