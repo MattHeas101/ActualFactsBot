@@ -299,7 +299,7 @@ client.on('message', message => {
     if (message.content === '!Gonzo') {
         number = 6;
         imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
-        message.channel.send ( {files: ["./images/Pride" + imageNumber + ".png"]})
+        message.channel.send ( {files: ["./images/Gonzo" + imageNumber + ".png"]})
     } 
 })
 
@@ -307,7 +307,7 @@ client.on('message', message => {
     if (message.content === '!gonzo') {
         number = 6;
         imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
-        message.channel.send ( {files: ["./images/Pride" + imageNumber + ".png"]})
+        message.channel.send ( {files: ["./images/Gonzo" + imageNumber + ".png"]})
     } 
 })
 
